@@ -82,6 +82,12 @@ CREATE TABLE story
 #
 #	4 - Person Table
 #
+#	Description
+#		Some overall description of the 'person' table
+#
+#	Attributes Description
+#		ps_id: Some description of what this attribute is
+#		fname: The first name of the person
 CREATE TABLE person 
 ( 
 	ps_id      SERIAL, 
