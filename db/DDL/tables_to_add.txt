@@ -3,7 +3,7 @@
 -	person as PS
 -	non_user as NU
 -	user as U
--	user_authentication as UA
+-	user_authentication as UAU
 -	user_preferences as UP
 -	repository as R
 -	family_repository as FR
@@ -16,7 +16,7 @@
 -	location as LOC
 -	story as S			(Weak entity on the photograph entity)
 +	photo_story as PHS
--	user activity as UA
+-	user activity as UAC
 -	log as L
 -	session_log as SL
 -	activity_log as AL
