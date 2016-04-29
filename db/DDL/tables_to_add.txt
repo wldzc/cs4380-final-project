@@ -1,22 +1,23 @@
--	era
--	life_period
--	person
--	non_user
--	user
--	user_authentication
--	user_preferences
--	repository
--	family_repository
--	community_repository
--	location_repository
-+	user_repo			(For when a user joins a repository)
--	person_relation
--	photograph
-+	photo_tag			
--	location
--	story				(Weak entity on the photograph entity)
-+	photo_story
--	user activity
--	log
--	session_log
--	activity_log
+-	era as ERA
+-	life_period as LP
+-	person as PS
+-	non_user as NU
+-	user as U
+-	user_authentication as UA
+-	user_preferences as UP
+-	repository as R
+-	family_repository as FR
+-	community_repository as CR
+-	location_repository as LR
++	user_repo as UR		(For when a user joins a repository)
+-	person_relation as PR
+-	photograph as P
++	photo_tag as PHT		 	
+-	location as LOC
+-	story as S			(Weak entity on the photograph entity)
++	photo_story as PHS
+-	user activity as UA
+-	log as L
+-	session_log as SL
+-	activity_log as AL
+-	photo_repo as PHR
