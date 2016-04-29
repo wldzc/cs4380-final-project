@@ -36,7 +36,7 @@
 
 
 #
-#	1)	Era 
+#	1)	Era ( era )
 #
 DROP TABLE IF EXISTS era;
 CREATE TABLE era
@@ -50,7 +50,7 @@ CREATE TABLE era
 
 
 #
-#	2)	Life Period
+#	2)	Life Period ( life_period )
 #
 DROP TABLE IF EXISTS life_period;
 CREATE TABLE life_period
@@ -64,7 +64,7 @@ CREATE TABLE life_period
 
 
 #
-#	3)	Person
+#	3)	Person ( person )
 #
 DROP TABLE IF EXISTS person;
 CREATE TABLE person
