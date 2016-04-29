@@ -3,7 +3,7 @@
 */
 
 #	Drop the database to start fresh again
-DROP DATABASE photoarchiving;
+DROP DATABASE IF EXISTS photoarchiving;
 
 #	Make sure the correct database (photoarchiving) is created
 CREATE DATABASE IF NOT EXISTS photoarchiving;
@@ -22,10 +22,10 @@ SOURCE ./table_create.sql;
 /*
 	VIEWS CREATION
 */
-SOURCE ./view_create.sql;
+# SOURCE ./view_create.sql;
 
 
 /*
 	TRIGGER CREATION
 */
-SOURCE ./tigger_create.sql;
+# SOURCE ./tigger_create.sql;
