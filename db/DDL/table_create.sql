@@ -33,7 +33,7 @@
 #	19)	Log						( log )
 #	20)	Session Log				( session_log )
 #	21)	Activity Log			( activity_log )
-
+#	22) Photo repository 		( photo_repo)
 
 #
 #	1)	Era ( era )
@@ -288,7 +288,7 @@ CREATE TABLE photo_story
 
 
 #
-#	User Activity	( user_activity )
+#	18) User Activity	( user_activity )
 #
 DROP TABLE IF EXISTS user_activity;
 CREATE TABLE user_activity
@@ -301,7 +301,7 @@ CREATE TABLE user_activity
 
 
 #
-#	Log	( log )
+#	19) Log	( log )
 #
 DROP TABLE IF EXISTS log;
 CREATE TABLE log
@@ -315,7 +315,7 @@ CREATE TABLE log
 
 
 #
-#	Session Log	( session_log )
+#	20) Session Log	( session_log )
 #
 DROP TABLE IF EXISTS session_log;
 CREATE TABLE session_log
@@ -329,7 +329,7 @@ CREATE TABLE session_log
 
 
 #
-#	Activity Log	( activity_log )
+#	21) Activity Log	( activity_log )
 #
 DROP TABLE IF EXISTS activity_log;
 CREATE TABLE activity_log
@@ -346,3 +346,16 @@ CREATE TABLE activity_log
 	FOREIGN KEY (r_id) REFERENCES repository(r_id),
 	PRIMARY KEY (lo_id)	
 );
+
+#
+#	22) Photo repository	( photo_repo)
+#
+DROP TABLE IF EXISTS photo_repo;
+CREATE TABLE photo_repo
+(
+	p_id 				BIGINT UNSIGNED,
+	r_id 				BIGINT UNSIGNED,
+	FOREIGN KEY (p_id) REFERENCES photograph(p_id),
+	FOREIGN KEY (r_id) REFERENCES repository(r_id),
+	PRIMARY KEY (p_id, r_id)
+)
