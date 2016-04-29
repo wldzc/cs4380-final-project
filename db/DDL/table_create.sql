@@ -348,7 +348,7 @@ CREATE TABLE activity_log
 );
 
 #
-#	22) Photo repository	( photo_repo)
+#	22) Photo Repository	( photo_repo)
 #
 DROP TABLE IF EXISTS photo_repo;
 CREATE TABLE photo_repo
@@ -358,4 +358,4 @@ CREATE TABLE photo_repo
 	FOREIGN KEY (p_id) REFERENCES photograph(p_id),
 	FOREIGN KEY (r_id) REFERENCES repository(r_id),
 	PRIMARY KEY (p_id, r_id)
-)
+);
