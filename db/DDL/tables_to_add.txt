@@ -1,0 +1,22 @@
+-	era
+-	life_period
+-	person
+-	non_user
+-	user
+-	user_authentication
+-	user_preferences
+-	repository
+-	family_repository
+-	community_repository
+-	location_repository
++	user_repo			(For when a user joins a repository)
+-	person_relation
+-	photograph
++	photo_tag			
+-	location
+-	story				(Weak entity on the photograph entity)
++	photo_story
+-	user activity
+-	log
+-	session_log
+-	activity_log
