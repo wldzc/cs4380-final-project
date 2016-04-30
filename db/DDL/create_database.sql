@@ -28,7 +28,7 @@ SOURCE ./input_data.sql;
 /*
 	USERS CREATION
 */
-# SOURCE ./users_create.sql;
+SOURCE ./users_create.sql;
 
 /*
 	VIEWS CREATION

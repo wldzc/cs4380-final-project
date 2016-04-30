@@ -9,3 +9,11 @@
 #
 #	File Description:	This is the SQL file that will create all the users that will
 #						access the database.
+
+
+/*
+	First make sure that team member users have access to the entire database
+*/
+
+#	Songjie
+GRANT INSERT, UPDATE, DELETE, SELECT ON photoarchiving.* TO songjie WITH GRANT OPTION;
