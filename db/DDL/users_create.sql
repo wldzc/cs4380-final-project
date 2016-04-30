@@ -30,7 +30,7 @@ GRANT INSERT, UPDATE, DELETE, SELECT ON photoarchiving.* TO songjie WITH GRANT O
 #	Cleanup - Delete the web_user ( if the web_user exists )
 
 
-CREATE 'web_user'@'localhost' IDENTIFIED BY 'sSK80rkyYAdzx3LjWpSN';
+CREATE USER 'web_user'@'localhost' IDENTIFIED BY 'sSK80rkyYAdzx3LjWpSN';
 
 #	Grant the web user privileges on all tables
 /*
