@@ -18,6 +18,13 @@ USE photoarchiving;
 */
 SOURCE ./table_create.sql;
 
+
+/*
+	INPUT DATA
+*/
+SOURCE ./input_data.sql;
+
+
 /*
 	USERS CREATION
 */
