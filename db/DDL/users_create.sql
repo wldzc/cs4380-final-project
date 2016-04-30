@@ -21,12 +21,3 @@ GRANT INSERT, UPDATE, DELETE, SELECT ON photoarchiving.* TO forsythetony WITH GR
 #	Songjie
 GRANT INSERT, UPDATE, DELETE, SELECT ON photoarchiving.* TO songjie WITH GRANT OPTION;
 
-
-TRUNCATE person;
-
-LOAD DATA LOCAL INFILE 'person.csv'
-INTO TABLE person
-TERMINATED BY ','
-ENCLOSED BY '"'
-IGNORE 1 LINES
-(@ignore, fname, mname, lname, birthdate, gender);
