@@ -20,8 +20,6 @@ GRANT INSERT, UPDATE, DELETE, SELECT ON photoarchiving.* TO forsythetony WITH GR
 
 #	Songjie
 GRANT INSERT, UPDATE, DELETE, SELECT ON photoarchiving.* TO songjie WITH GRANT OPTION;
-
-
 /*
 	Create the web user ( web_user ) that will be accessing the database 
 	through the PHP
