@@ -4,7 +4,7 @@ USE photoarchiving;
 
 
 #	Load data for the eras table
-LOAD DATA LOCAL INFILE '../input_data/eras.csv' INTO TABLE era
+LOAD DATA LOCAL INFILE '../input_data/era.csv' INTO TABLE era
 FIELDS TERMINATED BY ','
 OPTIONALLY ENCLOSED BY '"'
 LINES TERMINATED BY '\n'

@@ -1,0 +1,8 @@
+"name","start_year","end_year"
+"Childhood",0,10
+"Adolescence",9,12
+"Teens",13,20
+"College",18,24
+"Young Adult",20,35
+"Adult",20,60
+"Senior",60,200
