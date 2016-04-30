@@ -22,11 +22,14 @@ GRANT INSERT, UPDATE, DELETE, SELECT ON photoarchiving.* TO forsythetony WITH GR
 GRANT INSERT, UPDATE, DELETE, SELECT ON photoarchiving.* TO songjie WITH GRANT OPTION;
 
 
-TRUNCATE person;
+/*
+	Create the web user ( web_user ) that will be accessing the database 
+	through the PHP
+*/
 
-LOAD DATA LOCAL INFILE 'person.csv'
-INTO TABLE person
-TERMINATED BY ','
-ENCLOSED BY '"'
-IGNORE 1 LINES
-(@ignore, fname, mname, lname, birthdate, gender);
+#	Cleanup - Delete all of the web_users privileges ( if the web_user exists )
+
+#	Cleanup - Delete the web_user ( if the web_user exists )
+
+
+CREATE 'web_user'@'localhost' IDENTIFIED BY 'sSK80rkyYAdzx3LjWpSN';
