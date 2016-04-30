@@ -31,3 +31,18 @@ GRANT INSERT, UPDATE, DELETE, SELECT ON photoarchiving.* TO songjie WITH GRANT O
 
 
 CREATE 'web_user'@'localhost' IDENTIFIED BY 'sSK80rkyYAdzx3LjWpSN';
+
+#	Grant the web user privileges on all tables
+/*
+GRANT UPDATE, INSERT, SELECT, DELETE TO 'web_user'@'localhost' ON photoarchiving. ;
+GRANT UPDATE, INSERT, SELECT, DELETE TO 'web_user'@'localhost' ON photoarchiving. ;
+GRANT UPDATE, INSERT, SELECT, DELETE TO 'web_user'@'localhost' ON photoarchiving. ;
+GRANT UPDATE, INSERT, SELECT, DELETE TO 'web_user'@'localhost' ON photoarchiving. ;
+GRANT UPDATE, INSERT, SELECT, DELETE TO 'web_user'@'localhost' ON photoarchiving. ;
+GRANT UPDATE, INSERT, SELECT, DELETE TO 'web_user'@'localhost' ON photoarchiving. ;
+GRANT UPDATE, INSERT, SELECT, DELETE TO 'web_user'@'localhost' ON photoarchiving. ;
+GRANT UPDATE, INSERT, SELECT, DELETE TO 'web_user'@'localhost' ON photoarchiving. ;
+GRANT UPDATE, INSERT, SELECT, DELETE TO 'web_user'@'localhost' ON photoarchiving. ;
+GRANT UPDATE, INSERT, SELECT, DELETE TO 'web_user'@'localhost' ON photoarchiving. ;
+GRANT UPDATE, INSERT, SELECT, DELETE TO 'web_user'@'localhost' ON photoarchiving. ;
+*/
