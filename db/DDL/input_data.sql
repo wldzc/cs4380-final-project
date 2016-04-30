@@ -24,3 +24,15 @@ LINES TERMINATED BY '\n'
 IGNORE 1 LINES
 ( name , start_year , end_year );
 
+
+
+#	Load data for the person table
+LOAD DATA LOCAL INFILE '../input_data/person.csv' INTO TABLE person
+FIELDS TERMINATED BY ','
+OPTIONALLY ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+( fname, mname, lname, gender, @birth_date )
+SET
+	birthdate = STR_TO_DATE(@birth_date, '%c-%e-%Y')
+;
